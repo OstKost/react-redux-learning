@@ -23,7 +23,12 @@ export default (state = {}, action = {}) => {
 		case EDIT_STREAM:
 			return { ...state, [action.payload.id]: action.payload }
 		case DELETE_STREAM:
-			return state.filter(el => el.id !== action.payload.id)
+			return Object.keys(state).reduce((object, key) => {
+				if (key !== action.payload) {
+					object[key] = state[key]
+				}
+				return object
+			}, {})
 		// lodash
 		// return _.omit(state, action.payload)
 		default:
