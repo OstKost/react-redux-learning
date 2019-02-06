@@ -11,7 +11,7 @@ export default (state = {}, action = {}) => {
 		case FETCH_STREAMS:
 			return {
 				...state,
-				...state.reduce((acc, el) => {
+				...action.payload.reduce((acc, el) => {
 					acc[el.id] = el
 					return acc
 				}, {})

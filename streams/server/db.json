@@ -1,3 +1,27 @@
 {
-	"streams": []
+  "streams": [
+    {
+      "title": "New stream",
+      "description": "My new stream",
+      "id": 1
+    },
+    {
+      "title": "New stream with ID",
+      "description": "New ID stream",
+      "userId": "109641737006913434890",
+      "id": 2
+    },
+    {
+      "title": "New stream with navigation",
+      "description": "With PROGRAMMATIC navigation",
+      "userId": "109641737006913434890",
+      "id": 3
+    },
+    {
+      "title": "Me streaming Comp Reuse",
+      "description": "Form stream!",
+      "userId": "109641737006913434890",
+      "id": 4
+    }
+  ]
 }
